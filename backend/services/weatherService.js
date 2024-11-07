@@ -11,7 +11,7 @@ const checkThresholds = (weatherData) => {
 
     // Check if consecutive breaches meet the threshold
     if (breaches.length >= alertThresholds.consecutiveBreaches) {
-        console.log("Alert: Temperature threshold breached!");
+        //console.log("Alert: Temperature threshold breached!");
         // Trigger email alert here if needed
         breachCount = 0;  // Reset the counter after alert
     } else {
@@ -39,7 +39,7 @@ const getCityWeather = async (city) => {
         //checkThresholds(weatherData);  // Check thresholds
         return weatherData;
     } catch (error) {
-        console.error('Error fetching weather data:', error);
+        //console.error('Error fetching weather data:', error);
         throw new Error('Unable to retrieve weather data');
     }
 };
