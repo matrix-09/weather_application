@@ -22,7 +22,7 @@ const WeatherSummary = () => {
                 setCurrentWeather(response.data[0]);
             }
         } catch (error) {
-            console.error('Error fetching weather data:', error);
+            //console.error('Error fetching weather data:', error);
         }
     };
 
