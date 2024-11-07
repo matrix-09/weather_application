@@ -16,7 +16,7 @@ const WeatherSummary = () => {
 
     const fetchWeatherData = async (city) => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/weather/${city}`);
+            const response = await axios.get(`https://weather-application-e6vo.onrender.com/api/weather/${city}`);
             setWeatherData(response.data);
             if (response.data.length > 0) {
                 setCurrentWeather(response.data[0]);
