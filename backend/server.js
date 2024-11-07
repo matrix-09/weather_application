@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Your frontend React app's URL (adjust the port if necessary)
+    origin: 'https://weather-application-e6vo.onrender.com/', // Your frontend React app's URL (adjust the port if necessary)
     methods: ['GET', 'POST'], // Define allowed HTTP methods
     credentials: true          // Allow cookies (if needed)
 }));
